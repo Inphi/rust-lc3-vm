@@ -1,0 +1,11 @@
+[package]
+name = "lc3-vm"
+version = "0.1.0"
+authors = ["Murphy Law <mlaw2501@gmail.com>"]
+
+[dependencies]
+mio = "0.6"
+byteorder = "1"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winnt", "fileapi", "processenv", "consoleapi", "handleapi", "winbase", "fileapi", "errhandlingapi", "synchapi"] }
